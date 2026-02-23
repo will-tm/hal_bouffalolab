@@ -4,3 +4,30 @@ build:
   kconfig-ext: True
   settings:
     dts_root: .
+blobs:
+  - path: lib/bl808x/libpka_bl808.a
+    sha256: d04bc07f02486ed096417dad247acffba95883c1a909a7b8186f52db27926e5d
+    type: lib
+    version: 'ad2a37b8'
+    url: https://github.com/bouffalolab/bouffalo_sdk/raw/ad2a37b8eae3e618d5e9baafdfc4013266ebb59a/drivers/lhal/src/pka/libpka_bl808.a
+    license-path: LICENSE
+    description: "Public Key Algorithm (PKA) cryptographic library for BL808"
+    doc-url: https://github.com/bouffalolab/bouffalo_sdk/tree/ad2a37b8eae3e618d5e9baafdfc4013266ebb59a
+
+  # BL808 Wi-Fi libraries from the M1s SDK
+  - path: lib/bl808x/libwifi.a
+    sha256: 90c1f966e3789c9946c13a766108c2ba4afa4e96e12771cdaec1ba3f6a245d1d
+    type: lib
+    version: 'bf7e689c'
+    url: https://github.com/sipeed/M1s_BL808_SDK/raw/bf7e689cf49d57dd529e2492e5264ef602ed5b3c/components/network/wifi/lib/libwifi.a
+    license-path: include/bouffalolab/bl808x/wifi4/firmware/bl60x_fw_api.h
+    description: "Wi-Fi library for the BL808 wireless stack"
+    doc-url: https://github.com/sipeed/M1s_BL808_SDK/tree/bf7e689cf49d57dd529e2492e5264ef602ed5b3c/components/network/wifi
+  - path: lib/bl808x/libbl606p_phyrf.a
+    sha256: 7fd993e1a3ca5d316eb474b27cf6d67280cd187230abbc972216dcc0cfa9bc8d
+    type: lib
+    version: 'bf7e689c'
+    url: https://github.com/sipeed/M1s_BL808_SDK/raw/bf7e689cf49d57dd529e2492e5264ef602ed5b3c/components/platform/soc/bl606p/bl606p_phyrf/lib/libbl606p_phyrf.a
+    license-path: include/bouffalolab/bl808x/phyrf/rf.h
+    description: "PHY/RF library used by the BL808 Wi-Fi stack"
+    doc-url: https://github.com/sipeed/M1s_BL808_SDK/tree/bf7e689cf49d57dd529e2492e5264ef602ed5b3c/components/platform/soc/bl606p/bl606p_phyrf
