@@ -37,6 +37,7 @@
 #define BFLB_PINMUX_FUN_INST_qspi                       0x0018
 #define BFLB_PINMUX_FUN_INST_audac                      0x0019
 #define BFLB_PINMUX_FUN_INST_jtag                       0x001a
+#define BFLB_PINMUX_FUN_INST_pec0                       0x001b
 #define BFLB_PINMUX_FUN_INST_clock_out0                 0x001f
 #define BFLB_PINMUX_FUN_INST_clock_out1                 0x011f
 #define BFLB_PINMUX_FUN_INST_clock_out2                 0x021f
@@ -87,6 +88,7 @@
 #define BFLB_PINMUX_SIGNAL_dat5                         0x00
 #define BFLB_PINMUX_SIGNAL_fs                           0x00
 #define BFLB_PINMUX_SIGNAL_hsync                        0x00
+#define BFLB_PINMUX_SIGNAL_io                           0x00
 #define BFLB_PINMUX_SIGNAL_i2s_ref                      0x01
 #define BFLB_PINMUX_SIGNAL_in                           0x00
 #define BFLB_PINMUX_SIGNAL_miso                         0x00
