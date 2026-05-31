@@ -532,6 +532,25 @@
 #define GLB_REG_PWM1_IO_SEL_LEN  (1U)
 #define GLB_REG_PWM1_IO_SEL_MSK  (((1U << GLB_REG_PWM1_IO_SEL_LEN) - 1) << GLB_REG_PWM1_IO_SEL_POS)
 #define GLB_REG_PWM1_IO_SEL_UMSK (~(((1U << GLB_REG_PWM1_IO_SEL_LEN) - 1) << GLB_REG_PWM1_IO_SEL_POS))
+/* The PEC clock generator shares this register (0x1C0); these fields are aliased
+ * over pwm_cfg0 in the vendor SDK and drive PEC_CLK_DIV/EN/SEL.
+ */
+#define GLB_PEC_CFG0_OFFSET  (0x1C0)
+#define GLB_PEC_CLK_DIV      GLB_PEC_CLK_DIV
+#define GLB_PEC_CLK_DIV_POS  (0U)
+#define GLB_PEC_CLK_DIV_LEN  (5U)
+#define GLB_PEC_CLK_DIV_MSK  (((1U << GLB_PEC_CLK_DIV_LEN) - 1) << GLB_PEC_CLK_DIV_POS)
+#define GLB_PEC_CLK_DIV_UMSK (~(((1U << GLB_PEC_CLK_DIV_LEN) - 1) << GLB_PEC_CLK_DIV_POS))
+#define GLB_PEC_CLK_EN       GLB_PEC_CLK_EN
+#define GLB_PEC_CLK_EN_POS   (8U)
+#define GLB_PEC_CLK_EN_LEN   (1U)
+#define GLB_PEC_CLK_EN_MSK   (((1U << GLB_PEC_CLK_EN_LEN) - 1) << GLB_PEC_CLK_EN_POS)
+#define GLB_PEC_CLK_EN_UMSK  (~(((1U << GLB_PEC_CLK_EN_LEN) - 1) << GLB_PEC_CLK_EN_POS))
+#define GLB_PEC_CLK_SEL      GLB_PEC_CLK_SEL
+#define GLB_PEC_CLK_SEL_POS  (9U)
+#define GLB_PEC_CLK_SEL_LEN  (1U)
+#define GLB_PEC_CLK_SEL_MSK  (((1U << GLB_PEC_CLK_SEL_LEN) - 1) << GLB_PEC_CLK_SEL_POS)
+#define GLB_PEC_CLK_SEL_UMSK (~(((1U << GLB_PEC_CLK_SEL_LEN) - 1) << GLB_PEC_CLK_SEL_POS))
 
 /* 0x1E0 : pdm_cfg0 */
 #define GLB_PDM_CFG0_OFFSET     (0x1E0)
