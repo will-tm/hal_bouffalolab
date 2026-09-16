@@ -2802,6 +2802,10 @@
 #define GPIO30_EMAC_RXERR \
 	BFLB_PINMUX(30, emac, rxerr, periph)
 
+/* gpio30_cam0_clk */
+#define GPIO30_CAM0_CLK \
+	BFLB_PINMUX(30, cam0, clk, periph)
+
 /* gpio30_pwm0_ch2p */
 #define GPIO30_PWM0_CH2P \
 	BFLB_PINMUX(30, pwm0, ch2p, periph)

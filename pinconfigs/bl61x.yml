@@ -575,6 +575,7 @@ pins:
             - [uart1, [rts, cts, tx, rx]]
             - [can0, [tx, rx]]
             - [emac, [rxerr]]
+            - [cam0, [clk]]
             - [pwm0, [ch2p]]
             - [jtag, [tdo]]
             - [clock_out2, [cam_ref, i2s_ref, xtal, wifipll_32m]]
